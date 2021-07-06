@@ -14,7 +14,7 @@ adb remount
 
 adb shell mv /system/xbin/su /system/xbin/su_original
 adb push armv7/su /system/xbin/su
-# adb shell chmod 2750 /system/xbin/su
+# adb shell chmod 4750 /system/xbin/su
 adb shell chmod 755 /system/xbin/su
 adb shell chown root:shell /system/xbin/su
 adb shell chcon u:object_r:system_file:s0 /system/xbin/su
