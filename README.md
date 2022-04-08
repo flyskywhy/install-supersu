@@ -13,7 +13,7 @@ To root:
 
     ./armv7-a40i.sh
 
-then click on Android screen to run `SuperSU` APP.
+when you see 'Success', you can `CTRL+c`, and click on Android screen to run `SuperSU` APP.
 
 To revert root:
 
