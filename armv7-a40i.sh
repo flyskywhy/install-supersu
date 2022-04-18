@@ -6,7 +6,7 @@
 adb shell "if [ -f /system/xbin/su_original ]; then exit 0; else exit 1; fi"
 if test $? -eq 0
 then
-    echo Already run $0, maybe you need run corresponding revote.sh?
+    echo Already run $0, maybe you need run corresponding revert.sh?
     exit
 fi
 
