@@ -3,8 +3,8 @@
 # Ref to https://github.com/spff/install-supersu-via-adb/blob/master/suscript.sh
 # and https://android.stackexchange.com/questions/224119/how-to-gain-root-on-bluestacks-android-emulator/224120#224120
 
-adb shell "if [ -f /system/xbin/su_original ]; then exit 0; else exit 1; fi"
-if test $? -eq 0
+result=`adb shell "if [ -f /system/xbin/su_original ]; then echo 0; else echo 1; fi"`
+if test $result -eq 0
 then
     echo Already run $0, maybe you need run corresponding revert.sh?
     exit

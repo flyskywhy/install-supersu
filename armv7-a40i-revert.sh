@@ -1,5 +1,5 @@
-adb shell "if [ -f /system/xbin/su_original ]; then exit 0; else exit 1; fi"
-if test $? -eq 1
+result=`adb shell "if [ -f /system/xbin/su_original ]; then echo 0; else echo 1; fi"`
+if test $result -eq 1
 then
     echo Nothing need to be reverted!
     exit
